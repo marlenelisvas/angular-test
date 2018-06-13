@@ -25,7 +25,7 @@ export class LoginPageComponent implements OnInit {
   onSubmitLogin() {
       this.authService.loginEmail(this.email, this.password)
       .then( (res) => {
-        this.flashMensaje.show('Usuario logado correctamente.',
+        this.flashMensaje.show('Usuario logeado correctamente.',
         {cssClass: 'alert-success', timeout: 4000});
         this.router.navigate(['/privado']);
       }).catch((err) => {
